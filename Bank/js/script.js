@@ -1,3 +1,4 @@
+// Initialize variables
 let cardState = 0;
 let userName = "Richard";
 

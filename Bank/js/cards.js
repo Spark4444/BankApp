@@ -1,3 +1,4 @@
+// Initialize variables
 let money = 100;
 let cardNum = "1345999302352468";
 let cardDate = "10/29";
