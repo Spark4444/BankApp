@@ -1,2 +1,1 @@
-# Bank
-Just a bank app
+This is just a simple bank app
