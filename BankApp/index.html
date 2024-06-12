@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPR Bank</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="" href="img/favicon.png">
+</head>
+<body>
+    <div class="crop">
+    <!--Window for the password-->
+    <div class="passcodeWindow">
+        <div class="windowText">
+            <div class="userName"></div>
+            <div class="smallerText">Enter passcode</div>
+        </div>
+        <div class="passcode"><div class="active"></div><div class="active"></div><div class="active"></div><div class="active"></div></div>
+        <div class="pinShow">
+            <div class="n1" onclick="enterNum('1')">1</div>
+            <div class="n2" onclick="enterNum('2')">2</div>
+            <div class="n3" onclick="enterNum('3')">3</div>
+            <div class="n4" onclick="enterNum('4')">4</div>
+            <div class="n5" onclick="enterNum('5')">5</div>
+            <div class="n6" onclick="enterNum('6')">6</div>
+            <div class="n7" onclick="enterNum('7')">7</div>
+            <div class="n8" onclick="enterNum('8')">8</div>
+            <div class="n9" onclick="enterNum('9')">9</div>
+            <div class="n0" onclick="enterNum('0')">0</div>
+            <div class="delete" onclick="deleteNum()">x</div>
+        </div>
+    </div>
+
+    <!--Main window-->
+    <div class="blocksWrap" style="opacity: 0; display: none;">
+        <header>
+            <div class="money"></div>
+            <div class="card" onclick="flipCard()"></div>
+        </header>
+
+        <main>
+            <div class="buttons">
+                <div class="buttonWrap">
+                <button class="addMoney button" onclick="addMoney()">
+                <img class="buttonImg" src="img/add.png" alt="">
+                </button>
+                <div class="buttonText">Add Money</div>
+                </div>
+                <div class="buttonWrap">
+                <button class="transferMoney button" onclick="transferMoney()">
+                <img class="buttonImg" src="img/transfer.png" alt="">
+                </button>
+                <div class="buttonText">Transfer Money</div>
+                </div>
+                <div class="buttonWrap">
+                <button class="convertMoney button" onclick="convertMoney()">
+                <img class="buttonImg" src="img/convert.png" alt="">
+                </button>
+                <div class="buttonText">Convert current Money</div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="transactions"></div> 
+            <div class="footerDown">
+            <div class="currentExchangeRate"></div>
+            </div>
+        </footer>
+    </div>
+</div>
+    <script src="js/script.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/passcode.js"></script>
+    <script src="js/cards.js"></script>
+</body>
+</html>

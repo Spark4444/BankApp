@@ -1,1 +1,2 @@
-This is just a simple bank app
+# Bank App
+A project i made for testing input validation
